@@ -1,8 +1,8 @@
 {
-  "name": "@EVELETTE/trouvkach",
+  "name": "@becode/trouvkach",
   "version": "0.0.1",
   "description": "A simple react/node app, locating the ATMs nearby.",
-  "author": "Gaetan,Michaël,Dylan,Thomas",
+  "author": "leny <leny@becode.org>",
   "license": "MIT",
   "private": true,
   "scripts": {
