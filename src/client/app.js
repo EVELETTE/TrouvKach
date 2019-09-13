@@ -11,8 +11,8 @@ import ReactDOM from "react-dom";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import TypoGraphy from "@material-ui/core/Typography";
-import mainLogo from "../../src/logo.png";
-import NavBar from "../navbar";
+import mainLogo from "../client/assets/logo.png";
+import NavBar from "../client/components/navbar";
 class App extends Component {
     render() {
         return (
