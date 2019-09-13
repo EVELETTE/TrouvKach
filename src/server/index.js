@@ -36,7 +36,7 @@ mongoose
         poolSize: 10, // Maintain up to 10 socket connections
     })
     .then(() => {
-        console.log("mansan");
+        console.log("OK");
     });
 const terminalSchema = new mongoose.Schema({
     latitude: {

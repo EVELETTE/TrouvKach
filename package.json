@@ -51,7 +51,8 @@
     "express": "^4.17.1",
     "mongoose": "^5.7.0",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "typeface-roboto": "0.0.75"
   },
   "husky": {
     "hooks": {

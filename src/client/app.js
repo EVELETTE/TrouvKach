@@ -5,14 +5,13 @@
  * coded by BackstreetBoys@BeCode
  * started at 06/09/2019
  */
-
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import TypoGraphy from "@material-ui/core/Typography";
 import mainLogo from "../client/assets/logo.png";
-import NavBar from "../client/components/navbar";
+import Button from "../client/components/button";
+import Paper from "../client/components/paper";
 class App extends Component {
     render() {
         return (
@@ -20,11 +19,10 @@ class App extends Component {
                 <AppBar color={"primary"} position={"static"}>
                     <Toolbar>
                         <img src={mainLogo} alt={"trouvkach"} />
-                        <TypoGraphy variant={"title"} color={"inherit"}>
-                            {"TrouvKash"}
-                        </TypoGraphy>
+                        <h1> TrouvKach </h1>
                     </Toolbar>
-                    <NavBar />
+                    <Button />
+                    <Paper />
                 </AppBar>
             </div>
         );
