@@ -12,6 +12,9 @@ import Toolbar from "@material-ui/core/Toolbar";
 import mainLogo from "../client/assets/logo.png";
 import Button from "../client/components/button";
 import Paper from "../client/components/paper";
+//import MeLocate from "../client/components/me-locate";
+//import Map from "../client/components/map";
+
 class App extends Component {
     render() {
         return (
@@ -31,3 +34,5 @@ class App extends Component {
 export default App;
 
 ReactDOM.render(<App />, document.querySelector("#app"));
+// ReactDOM.render(<Map />, document.querySelector("#app"));
+// ReactDOM.render(<MeLocate />, document.querySelector("#app"));
