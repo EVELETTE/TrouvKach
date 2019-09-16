@@ -22,7 +22,8 @@ class App extends Component {
                 <AppBar color={"primary"} position={"static"}>
                     <Toolbar>
                         <img src={mainLogo} alt={"trouvkach"} />
-                        <h1> TrouvKach </h1>
+                        <h1>TrouvKach</h1>
+
                     </Toolbar>
                     <Button />
                     <Paper />
@@ -34,5 +35,5 @@ class App extends Component {
 export default App;
 
 ReactDOM.render(<App />, document.querySelector("#app"));
-// ReactDOM.render(<Map />, document.querySelector("#app"));
+//ReactDOM.render(<Map />, document.querySelector("#app"));
 // ReactDOM.render(<MeLocate />, document.querySelector("#app"));
