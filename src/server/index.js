@@ -8,7 +8,7 @@
 
 import express from "express";
 import path from "path";
-import mongodb from "mongodb";
+// import mongodb from "mongodb";
 
 const {APP_PORT} = process.env;
 
@@ -20,7 +20,6 @@ app.get("/hello", (req, res) => {
     console.log(`ℹ️  (${req.method.toUpperCase()}) ${req.url}`);
     res.send("Hello, World!");
 });
-
 
 app.listen(APP_PORT, () =>
     console.log(`🚀 Server is listening on port ${APP_PORT}.`),
@@ -34,11 +33,11 @@ mongo.connect("mongodb://dev:dev@mongo:27017/admin", (err, client) => {
 
     terminals
         .find({address: "Stationsstraat 57, 9230 Wetteren"})
-        .toArray((err, item1) => {
+        .toArray((err1, item1) => {
             // eslint-disable-next-line no-console
             const thatBank = item1[0].bank;
 
-            banks.find({_id: thatBank}).toArray((err, item2) => {
+            banks.find({_id: thatBank}).toArray((err2, item2) => {
                 // eslint-disable-next-line no-console
                 console.log(item2[0].name);
             });
@@ -46,25 +45,27 @@ mongo.connect("mongodb://dev:dev@mongo:27017/admin", (err, client) => {
 
     terminals
         .find({latitude: 51.045} && {longitude: 4.72161})
-        .toArray((err, item1) => {
+        .toArray((err1, item1) => {
             // eslint-disable-next-line no-console
-            if (err){
-                console.log(err)
-            }else {
-            const thatBank = item1[0].bank;
-            app.get("/terminal", (req, res) => {
-                console.log(`ℹ️  (${req.method.toUpperCase()}) ${req.url}`);
-                res.send(item1[0].address);
-            });
-
-            banks.find({_id: thatBank}).toArray((err, item2) => {
-                // eslint-disable-next-line no-console
-                console.log(item2[0].name);
-                app.get("/banks", (req, res) => {
+            if (err) {
+                console.log(err);
+            } else {
+                const thatBank = item1[0].bank;
+                app.get("/terminal", (req, res) => {
                     console.log(`ℹ️  (${req.method.toUpperCase()}) ${req.url}`);
-                    res.send(item2[0]);
+                    res.send(item1[0].address);
                 });
-            });
-        });
 
+                banks.find({_id: thatBank}).toArray((err2, item2) => {
+                    // eslint-disable-next-line no-console
+                    console.log(item2[0].name);
+                    app.get("/banks", (req, res) => {
+                        console.log(
+                            `ℹ️  (${req.method.toUpperCase()}) ${req.url}`,
+                        );
+                        res.send(item2[0]);
+                    });
+                });
+            }
+        });
 });
