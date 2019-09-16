@@ -21,6 +21,7 @@ app.get("/hello", (req, res) => {
     res.send("Hello, World!");
 });
 
+
 app.listen(APP_PORT, () =>
     console.log(`🚀 Server is listening on port ${APP_PORT}.`),
 );
@@ -32,7 +33,7 @@ mongo.connect("mongodb://dev:dev@mongo:27017/admin", (err, client) => {
     const banks = db.collection("banks");
 
     terminals
-        .find({address: "Zeelaan 67, 8670 Koksijde"})
+        .find({address: "Stationsstraat 57, 9230 Wetteren"})
         .toArray((err, item1) => {
             // eslint-disable-next-line no-console
             const thatBank = item1[0].bank;
@@ -42,4 +43,28 @@ mongo.connect("mongodb://dev:dev@mongo:27017/admin", (err, client) => {
                 console.log(item2[0].name);
             });
         });
+
+    terminals
+        .find({latitude: 51.045} && {longitude: 4.72161})
+        .toArray((err, item1) => {
+            // eslint-disable-next-line no-console
+            if (err){
+                console.log(err)
+            }else {
+            const thatBank = item1[0].bank;
+            app.get("/terminal", (req, res) => {
+                console.log(`ℹ️  (${req.method.toUpperCase()}) ${req.url}`);
+                res.send(item1[0].address);
+            });
+
+            banks.find({_id: thatBank}).toArray((err, item2) => {
+                // eslint-disable-next-line no-console
+                console.log(item2[0].name);
+                app.get("/banks", (req, res) => {
+                    console.log(`ℹ️  (${req.method.toUpperCase()}) ${req.url}`);
+                    res.send(item2[0]);
+                });
+            });
+        });
+
 });
