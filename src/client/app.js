@@ -23,7 +23,6 @@ class App extends Component {
                     <Toolbar>
                         <img src={mainLogo} alt={"trouvkach"} />
                         <h1>TrouvKach</h1>
-
                     </Toolbar>
                     <Button />
                     <Paper />

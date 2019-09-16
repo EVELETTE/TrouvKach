@@ -25,4 +25,21 @@ app.listen(APP_PORT, () =>
     console.log(`🚀 Server is listening on port ${APP_PORT}.`),
 );
 const mongo = require("mongodb").MongoClient;
-v
+
+mongo.connect("mongodb://dev:dev@mongo:27017/admin", (err, client) => {
+    const db = client.db("trouvkash");
+    const terminals = db.collection("terminals");
+    const banks = db.collection("banks");
+
+    terminals
+        .find({address: "Zeelaan 67, 8670 Koksijde"})
+        .toArray((err, item1) => {
+            // eslint-disable-next-line no-console
+            const thatBank = item1[0].bank;
+
+            banks.find({_id: thatBank}).toArray((err, item2) => {
+                // eslint-disable-next-line no-console
+                console.log(item2[0].name);
+            });
+        });
+});
