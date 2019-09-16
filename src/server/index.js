@@ -42,7 +42,6 @@ mongo.connect("mongodb://dev:dev@mongo:27017/admin", (err, client) => {
                 console.log(item2[0].name);
             });
         });
-
     terminals
         .find({latitude: 51.045} && {longitude: 4.72161})
         .toArray((err1, item1) => {
@@ -63,7 +62,7 @@ mongo.connect("mongodb://dev:dev@mongo:27017/admin", (err, client) => {
                         console.log(
                             `ℹ️  (${req.method.toUpperCase()}) ${req.url}`,
                         );
-                        res.send(item2[0]);
+                        res.send(`${item2[0].name}  : ${item2[0].url}`);
                     });
                 });
             }
