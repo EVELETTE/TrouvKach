@@ -7,6 +7,8 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ButtonEmpty from "../components/buttonempty";
 
+import ArgentaIcon from "../icons/argentaicon.png";
+
 const useStyles = makeStyles(theme => ({
     root: {
         width: "100%",
@@ -37,8 +39,8 @@ export default function ControlledExpansionPanels() {
                 onChange={handleChange("panel1")}>
                 <ExpansionPanelSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1bh-content"
-                    id="panel1bh-header">
+                    aria-controls={"panel1bh-content"}
+                    id={"panel1bh-header"}>
                     <Typography className={classes.heading}>
                         {"Terminal"}
                     </Typography>
@@ -56,8 +58,8 @@ export default function ControlledExpansionPanels() {
                 onChange={handleChange("panel2")}>
                 <ExpansionPanelSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel2bh-content"
-                    id="panel2bh-header">
+                    aria-controls={"panel2bh-content"}
+                    id={"panel2bh-header"}>
                     <Typography className={classes.heading}>
                         {"Terminal"}
                     </Typography>
@@ -75,8 +77,8 @@ export default function ControlledExpansionPanels() {
                 onChange={handleChange("panel3")}>
                 <ExpansionPanelSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel3bh-content"
-                    id="panel3bh-header">
+                    aria-controls={"panel3bh-content"}
+                    id={"panel3bh-header"}>
                     <Typography className={classes.heading}>
                         {"Terminal"}
                     </Typography>
@@ -94,8 +96,8 @@ export default function ControlledExpansionPanels() {
                 onChange={handleChange("panel4")}>
                 <ExpansionPanelSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel4bh-content"
-                    id="panel4bh-header">
+                    aria-controls={"panel4bh-content"}
+                    id={"panel4bh-header"}>
                     <Typography className={classes.heading}>
                         {"Terminal"}
                     </Typography>
@@ -113,8 +115,8 @@ export default function ControlledExpansionPanels() {
                 onChange={handleChange("panel5")}>
                 <ExpansionPanelSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel4bh-content"
-                    id="panel4bh-header">
+                    aria-controls={"panel4bh-content"}
+                    id={"panel4bh-header"}>
                     <Typography className={classes.heading}>
                         {"Terminal"}
                     </Typography>
@@ -132,8 +134,8 @@ export default function ControlledExpansionPanels() {
                 onChange={handleChange("panel6")}>
                 <ExpansionPanelSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel4bh-content"
-                    id="panel4bh-header">
+                    aria-controls={"panel4bh-content"}
+                    id={"panel4bh-header"}>
                     <Typography className={classes.heading}>
                         {"Terminal"}
                     </Typography>
@@ -151,8 +153,8 @@ export default function ControlledExpansionPanels() {
                 onChange={handleChange("panel7")}>
                 <ExpansionPanelSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel4bh-content"
-                    id="panel4bh-header">
+                    aria-controls={"panel4bh-content"}
+                    id={"panel4bh-header"}>
                     <Typography className={classes.heading}>
                         {"Terminal"}
                     </Typography>
@@ -170,8 +172,8 @@ export default function ControlledExpansionPanels() {
                 onChange={handleChange("panel8")}>
                 <ExpansionPanelSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel4bh-content"
-                    id="panel4bh-header">
+                    aria-controls={"panel4bh-content"}
+                    id={"panel4bh-header"}>
                     <Typography className={classes.heading}>
                         {"Terminal"}
                     </Typography>
@@ -189,8 +191,8 @@ export default function ControlledExpansionPanels() {
                 onChange={handleChange("panel9")}>
                 <ExpansionPanelSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel4bh-content"
-                    id="panel4bh-header">
+                    aria-controls={"panel4bh-content"}
+                    id={"panel4bh-header"}>
                     <Typography className={classes.heading}>
                         {"Terminal"}
                     </Typography>
@@ -208,8 +210,8 @@ export default function ControlledExpansionPanels() {
                 onChange={handleChange("panel10")}>
                 <ExpansionPanelSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel4bh-content"
-                    id="panel4bh-header">
+                    aria-controls={"panel4bh-content"}
+                    id={"panel4bh-header"}>
                     <Typography className={classes.heading}>
                         {"Terminal"}
                     </Typography>
