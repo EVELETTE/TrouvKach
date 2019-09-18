@@ -7,9 +7,10 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import Banks1 from "../assets/belfius.jpg";
-import Banks2 from "../assets/ing.jpg";
-import Banks3 from "../assets/fortis.jpg";
+
+import BelfiusImg from "../assets/belfius.jpg";
+import IngImg from "../assets/ing.jpg";
+import FortisImg from "../assets/fortis.jpg";
 
 const useStyles = makeStyles({
     card: {
@@ -28,72 +29,54 @@ export default function MediaCard() {
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
-                    image="../assets/belfius.jpg"
-                    title="belfius"
+                    image={BelfiusImg}
+                    title={"belfius"}
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        Belfius Gretry
-                    </Typography>
-                    <Typography
-                        variant="body2"
-                        color="textSecondary"
-                        component="p">
-                        Rue Gretry 67 4020 Liege
+                    <Typography gutterBottom variant={"h5"} component={"h2"}>
+                        {"BELFIUS"}
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    See more
+                <Button size={"small"} color={"primary"}>
+                    {"See more"}
                 </Button>
             </CardActions>
 
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
-                    image="../assets/fortis.jpg"
-                    title="ing"
+                    image={IngImg}
+                    title={"ing"}
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        ING Gretry
-                    </Typography>
-                    <Typography
-                        variant="body2"
-                        color="textSecondary"
-                        component="p">
-                        Rue Grétry 76 4020 Liège
+                    <Typography gutterBottom variant={"h5"} component={"h2"}>
+                        {"ING"}
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    See more
+                <Button size={"small"} color={"primary"}>
+                    {"See more"}
                 </Button>
             </CardActions>
 
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
-                    image="../assets/ing.jpg"
-                    title="ing"
+                    image={FortisImg}
+                    title={"fortis"}
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        Fortis Gretry
-                    </Typography>
-                    <Typography
-                        variant="body2"
-                        color="textSecondary"
-                        component="p">
-                        Rue Grétry 30 4020 Liège
+                    <Typography gutterBottom variant={"h5"} component={"h2"}>
+                        {"FORTIS"}
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    See more
+                <Button size={"small"} color={"primary"}>
+                    {"See more"}
                 </Button>
             </CardActions>
         </Card>
