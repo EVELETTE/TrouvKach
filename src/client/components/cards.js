@@ -8,9 +8,20 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
+import ArgentaImg from "../assets/argenta.jpg";
+import AxaImg from "../assets/axa.jpg";
 import BelfiusImg from "../assets/belfius.jpg";
-import IngImg from "../assets/ing.jpg";
+import BeoImg from "../assets/beo.jpg";
+import BkcpImg from "../assets/bkcp.jpg";
+import BpostImg from "../assets/bpost.jpg";
+import CbcImg from "../assets/cbc.jpg";
+import CrelanImg from "../assets/crelan.jpg";
+import DeltaImg from "../assets/delta.jpg";
+import DeutscheImg from "../assets/deutsche.jpg";
 import FortisImg from "../assets/fortis.jpg";
+import IngImg from "../assets/ing.jpg";
+import KbcImg from "../assets/kbc.jpg";
+import KeytradeImg from "../assets/keytrade.jpg";
 
 const useStyles = makeStyles({
     card: {
@@ -29,55 +40,169 @@ export default function MediaCard() {
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
-                    image={BelfiusImg}
-                    title={"belfius"}
+                    image={ArgentaImg}
+                    title={"ARGENTA"}
                 />
-                <CardContent>
-                    <Typography gutterBottom variant={"h5"} component={"h2"}>
-                        {"BELFIUS"}
-                    </Typography>
-                </CardContent>
+                <CardContent />
             </CardActionArea>
             <CardActions>
-                <Button size={"small"} color={"primary"}>
-                    {"See more"}
-                </Button>
+                <Button size={"small"}>{"See more"}</Button>
             </CardActions>
 
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
-                    image={IngImg}
-                    title={"ing"}
+                    image={AxaImg}
+                    title={"AXA"}
                 />
-                <CardContent>
-                    <Typography gutterBottom variant={"h5"} component={"h2"}>
-                        {"ING"}
-                    </Typography>
-                </CardContent>
+                <CardContent />
             </CardActionArea>
             <CardActions>
-                <Button size={"small"} color={"primary"}>
-                    {"See more"}
-                </Button>
+                <Button size={"small"}>{"See more"}</Button>
+            </CardActions>
+
+            <CardActionArea>
+                <CardMedia
+                    className={classes.media}
+                    image={BelfiusImg}
+                    title={"BELFIUS"}
+                />
+                <CardContent />
+            </CardActionArea>
+            <CardActions>
+                <Button size={"small"}>{"See more"}</Button>
+            </CardActions>
+
+            <CardActionArea>
+                <CardMedia
+                    className={classes.media}
+                    image={BeoImg}
+                    title={"BEO"}
+                />
+                <CardContent />
+            </CardActionArea>
+            <CardActions>
+                <Button size={"small"}>{"See more"}</Button>
+            </CardActions>
+
+            <CardActionArea>
+                <CardMedia
+                    className={classes.media}
+                    image={BkcpImg}
+                    title={"BKCP"}
+                />
+                <CardContent />
+            </CardActionArea>
+            <CardActions>
+                <Button size={"small"}>{"See more"}</Button>
+            </CardActions>
+
+            <CardActionArea>
+                <CardMedia
+                    className={classes.media}
+                    image={BpostImg}
+                    title={"BPOST"}
+                />
+                <CardContent />
+            </CardActionArea>
+            <CardActions>
+                <Button size={"small"}>{"See more"}</Button>
+            </CardActions>
+
+            <CardActionArea>
+                <CardMedia
+                    className={classes.media}
+                    image={CbcImg}
+                    title={"CBC"}
+                />
+                <CardContent />
+            </CardActionArea>
+            <CardActions>
+                <Button size={"small"}>{"See more"}</Button>
+            </CardActions>
+
+            <CardActionArea>
+                <CardMedia
+                    className={classes.media}
+                    image={CrelanImg}
+                    title={"CRELAN"}
+                />
+                <CardContent />
+            </CardActionArea>
+            <CardActions>
+                <Button size={"small"}>{"See more"}</Button>
+            </CardActions>
+
+            <CardActionArea>
+                <CardMedia
+                    className={classes.media}
+                    image={DeltaImg}
+                    title={"DELTA"}
+                />
+                <CardContent />
+            </CardActionArea>
+            <CardActions>
+                <Button size={"small"}>{"See more"}</Button>
+            </CardActions>
+
+            <CardActionArea>
+                <CardMedia
+                    className={classes.media}
+                    image={DeutscheImg}
+                    title={"DEUTSCHE"}
+                />
+                <CardContent />
+            </CardActionArea>
+            <CardActions>
+                <Button size={"small"}>{"See more"}</Button>
             </CardActions>
 
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
                     image={FortisImg}
-                    title={"fortis"}
+                    title={"FORTIS"}
                 />
-                <CardContent>
-                    <Typography gutterBottom variant={"h5"} component={"h2"}>
-                        {"FORTIS"}
-                    </Typography>
-                </CardContent>
+                <CardContent />
             </CardActionArea>
             <CardActions>
-                <Button size={"small"} color={"primary"}>
-                    {"See more"}
-                </Button>
+                <Button size={"small"}>{"See more"}</Button>
+            </CardActions>
+
+            <CardActionArea>
+                <CardMedia
+                    className={classes.media}
+                    image={IngImg}
+                    title={"ING"}
+                />
+                <CardContent />
+            </CardActionArea>
+            <CardActions>
+                <Button size={"small"}>{"See more"}</Button>
+            </CardActions>
+
+            <CardActionArea>
+                <CardMedia
+                    className={classes.media}
+                    image={KbcImg}
+                    title={"KBC"}
+                />
+                <CardContent />
+            </CardActionArea>
+            <CardActions>
+                <Button size={"small"}>{"See more"}</Button>
+            </CardActions>
+
+            <CardActionArea>
+                <CardMedia
+                    className={classes.media}
+                    image={KeytradeImg}
+                    title={"KEYTRADE"}
+                />
+                <CardContent />
+            </CardActionArea>
+            <CardActions>
+                <Button size={"small"}>{"See more"}</Button>
             </CardActions>
         </Card>
     );
