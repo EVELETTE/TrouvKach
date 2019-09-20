@@ -9,6 +9,7 @@ p,
 ul,
 li {
     font-family: sans-serif;
+    color: #fff;
 }
 ul.header li {
     display: inline;
@@ -16,7 +17,7 @@ ul.header li {
     margin: 0;
 }
 ul.header {
-    background-color: #111;
+    background-color: rgba(17, 17, 17, 0.287);
     padding: 0;
 }
 ul.header li a {
@@ -28,7 +29,7 @@ ul.header li a {
     display: inline-block;
 }
 .content {
-    background-color: #fff;
+    background-color: rgba(17, 17, 17, 0.287);
     padding: 20px;
 }
 .content h2 {

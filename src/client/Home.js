@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Localisation from "./components/localisation";
+import StreetMap from "../client/components/streetmap";
 
 import Gps from "./assets/gps.png";
 
@@ -13,6 +14,8 @@ class Home extends Component {
                     <img src={Gps} alt={"GPS"} />
                 </center>
                 <Localisation />
+                <br />
+                <StreetMap />
             </div>
         );
     }
