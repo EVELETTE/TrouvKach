@@ -2,6 +2,7 @@
 import React from "react";
 import {makeStyles} from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
+import MoneyOffIcon from "@material-ui/icons/MoneyOff";
 
 const useStyles = makeStyles(theme => ({
     button: {
@@ -21,6 +22,7 @@ export default function ContainedButtons() {
                 variant={"contained"}
                 color={"secondary"}
                 className={classes.button}>
+                <MoneyOffIcon />
                 Empty
             </Button>
             <input

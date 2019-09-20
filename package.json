@@ -2,9 +2,12 @@
   "name": "@EVELETTE/trouvkach",
   "version": "0.0.1",
   "description": "A simple react/node app, locating the ATMs nearby.",
-  "author": "Machiel,Thomas,Dylan,Gaetan",
+  "author": "Michael,Thomas,Dylan,Gaetan",
   "license": "MIT",
   "private": true,
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
     "mongo:import:banks": "docker-compose exec mongo mongoimport --authenticationDatabase admin -u dev -p dev -c banks -d trouvkash --file /usr/dump/banks.json --jsonArray",
     "mongo:import:terminals": "docker-compose exec mongo mongoimport --authenticationDatabase admin -u dev -p dev -c terminals -d trouvkash --file /usr/dump/terminals.json --jsonArray",

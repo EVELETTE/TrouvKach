@@ -10,6 +10,7 @@ class Banks extends Component {
                 <center>
                     <img src={BankImg} alt={"BANK"} />
                 </center>
+                <br />
                 <center>
                     <Cards />
                 </center>

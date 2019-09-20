@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
         margin: theme.spacing(2),
     },
     placeholder: {
-        height: 40,
+        height: 25,
     },
 }));
 

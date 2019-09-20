@@ -6,8 +6,9 @@ import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ButtonEmpty from "../components/buttonempty";
-
-import ArgentaIcon from "../icons/argentaicon.png";
+import AccountBalanceIcon from "@material-ui/icons/AccountBalance";
+import DirectionsWalkIcon from "@material-ui/icons/DirectionsWalk";
+import MapIcon from "@material-ui/icons/Map";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -42,13 +43,16 @@ export default function ControlledExpansionPanels() {
                     aria-controls={"panel1bh-content"}
                     id={"panel1bh-header"}>
                     <Typography className={classes.heading}>
+                        <AccountBalanceIcon />
                         {"Terminal"}
                     </Typography>
                     <Typography className={classes.secondaryHeading}>
+                        <DirectionsWalkIcon />
                         {"Distance"}
                     </Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
+                    <MapIcon />
                     <Typography>Adress</Typography>
                     <ButtonEmpty />
                 </ExpansionPanelDetails>
@@ -61,13 +65,16 @@ export default function ControlledExpansionPanels() {
                     aria-controls={"panel2bh-content"}
                     id={"panel2bh-header"}>
                     <Typography className={classes.heading}>
+                        <AccountBalanceIcon />
                         {"Terminal"}
                     </Typography>
                     <Typography className={classes.secondaryHeading}>
+                        <DirectionsWalkIcon />
                         {"Distance"}
                     </Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
+                    <MapIcon />
                     <Typography>Adress</Typography>
                     <ButtonEmpty />
                 </ExpansionPanelDetails>
@@ -80,13 +87,16 @@ export default function ControlledExpansionPanels() {
                     aria-controls={"panel3bh-content"}
                     id={"panel3bh-header"}>
                     <Typography className={classes.heading}>
+                        <AccountBalanceIcon />
                         {"Terminal"}
                     </Typography>
                     <Typography className={classes.secondaryHeading}>
+                        <DirectionsWalkIcon />
                         {"Distance"}
                     </Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
+                    <MapIcon />
                     <Typography>Adress</Typography>
                     <ButtonEmpty />
                 </ExpansionPanelDetails>
@@ -99,13 +109,16 @@ export default function ControlledExpansionPanels() {
                     aria-controls={"panel4bh-content"}
                     id={"panel4bh-header"}>
                     <Typography className={classes.heading}>
+                        <AccountBalanceIcon />
                         {"Terminal"}
                     </Typography>
                     <Typography className={classes.secondaryHeading}>
+                        <DirectionsWalkIcon />
                         {"Distance"}
                     </Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
+                    <MapIcon />
                     <Typography>Adress</Typography>
                     <ButtonEmpty />
                 </ExpansionPanelDetails>
@@ -118,13 +131,16 @@ export default function ControlledExpansionPanels() {
                     aria-controls={"panel4bh-content"}
                     id={"panel4bh-header"}>
                     <Typography className={classes.heading}>
+                        <AccountBalanceIcon />
                         {"Terminal"}
                     </Typography>
                     <Typography className={classes.secondaryHeading}>
+                        <DirectionsWalkIcon />
                         {"Distance"}
                     </Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
+                    <MapIcon />
                     <Typography>Adress</Typography>
                     <ButtonEmpty />
                 </ExpansionPanelDetails>
@@ -137,13 +153,16 @@ export default function ControlledExpansionPanels() {
                     aria-controls={"panel4bh-content"}
                     id={"panel4bh-header"}>
                     <Typography className={classes.heading}>
+                        <AccountBalanceIcon />
                         {"Terminal"}
                     </Typography>
                     <Typography className={classes.secondaryHeading}>
+                        <DirectionsWalkIcon />
                         {"Distance"}
                     </Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
+                    <MapIcon />
                     <Typography>Adress</Typography>
                     <ButtonEmpty />
                 </ExpansionPanelDetails>
@@ -156,13 +175,16 @@ export default function ControlledExpansionPanels() {
                     aria-controls={"panel4bh-content"}
                     id={"panel4bh-header"}>
                     <Typography className={classes.heading}>
+                        <AccountBalanceIcon />
                         {"Terminal"}
                     </Typography>
                     <Typography className={classes.secondaryHeading}>
+                        <DirectionsWalkIcon />
                         {"Distance"}
                     </Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
+                    <MapIcon />
                     <Typography>Adress</Typography>
                     <ButtonEmpty />
                 </ExpansionPanelDetails>
@@ -175,13 +197,16 @@ export default function ControlledExpansionPanels() {
                     aria-controls={"panel4bh-content"}
                     id={"panel4bh-header"}>
                     <Typography className={classes.heading}>
+                        <AccountBalanceIcon />
                         {"Terminal"}
                     </Typography>
                     <Typography className={classes.secondaryHeading}>
+                        <DirectionsWalkIcon />
                         {"Distance"}
                     </Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
+                    <MapIcon />
                     <Typography>Adress</Typography>
                     <ButtonEmpty />
                 </ExpansionPanelDetails>
@@ -194,13 +219,16 @@ export default function ControlledExpansionPanels() {
                     aria-controls={"panel4bh-content"}
                     id={"panel4bh-header"}>
                     <Typography className={classes.heading}>
+                        <AccountBalanceIcon />
                         {"Terminal"}
                     </Typography>
                     <Typography className={classes.secondaryHeading}>
+                        <DirectionsWalkIcon />
                         {"Distance"}
                     </Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
+                    <MapIcon />
                     <Typography>Adress</Typography>
                     <ButtonEmpty />
                 </ExpansionPanelDetails>
@@ -213,13 +241,16 @@ export default function ControlledExpansionPanels() {
                     aria-controls={"panel4bh-content"}
                     id={"panel4bh-header"}>
                     <Typography className={classes.heading}>
+                        <AccountBalanceIcon />
                         {"Terminal"}
                     </Typography>
                     <Typography className={classes.secondaryHeading}>
+                        <DirectionsWalkIcon />
                         {"Distance"}
                     </Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
+                    <MapIcon />
                     <Typography>Adress</Typography>
                     <ButtonEmpty />
                 </ExpansionPanelDetails>

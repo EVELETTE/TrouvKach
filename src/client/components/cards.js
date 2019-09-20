@@ -6,8 +6,6 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-
 import ArgentaImg from "../assets/argenta.jpg";
 import AxaImg from "../assets/axa.jpg";
 import BelfiusImg from "../assets/belfius.jpg";

@@ -4,7 +4,7 @@ import L from "leaflet";
 function Map() {
     useEffect(() => {
         // create map
-        L.map("map", {
+        const map = L.map("map", {
             center: [50.638728, 5.5954158],
             zoom: 16,
             layers: [
@@ -14,6 +14,9 @@ function Map() {
                 }),
             ],
         });
+        const markerUsr = new L.LatLng(50.638728, 5.5954158);
+        const markerUser = new L.Marker(markerUsr);
+        markerUser.addTo(map);
     }, []);
 
     return <div id={"map"} />;

@@ -10,6 +10,7 @@ class Terminals extends Component {
                 <center>
                     <img src={TerminalImg} alt={"TERMINAL"} />
                 </center>
+                <br />
                 <List />
             </div>
         );
